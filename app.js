@@ -13,7 +13,6 @@ function updateProduct(product, Productprice, isIncreasing){
     const productTotal = document.getElementById(product+'-total')
     productTotal.innerText = productNumber * Productprice
     calculateTotal()
-
 }
 function calculateTotal(){
     const phoneTotal = parseFloat(document.getElementById('phone-total').innerText)
@@ -24,10 +23,6 @@ function calculateTotal(){
     document.getElementById('tax-amount').innerText = taxCount
     document.getElementById('total-price').innerText = taxCount + subTotal
     console.log(typeof(taxCount));
-
-
-
-
 }
 //Phone  Events
 document.getElementById('phone-plus').addEventListener('click',function(){
